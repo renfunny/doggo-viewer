@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.navigation-bar {
+  background-color: rgb(224, 188, 134);
+  margin: 0;
+  border: 1px solid brown;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav h1 {
+  background-color: white;
+  color: rgb(224, 188, 134);
+  border: 1px solid black;
+  padding: 0 4px 5px 4px;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.container {
+  border: 0px red solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-top: 5px;
+}
+
+.loading {
+  font-size: 50px;
+  text-align: center;
+  border: 0px solid blue;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+.dog-img {
+  display: none;
+  height: 400px;
+}
+.show {
+  display: block;
+}
+.breeds {
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
